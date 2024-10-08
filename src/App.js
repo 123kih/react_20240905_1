@@ -17,6 +17,7 @@ import MyPage from './pages/MyPage';
 import Menu3 from './pages/mypage/Menu3';
 import Menu2 from './pages/mypage/Menu2';
 import Menu1 from './pages/mypage/Menu1';
+import Menu4 from './pages/mypage/Menu4';
 
 const App = () => {
 
@@ -58,6 +59,7 @@ const App = () => {
             <Route path="menu1" element={<Menu1 />} />
             <Route path="menu2" element={<Menu2 />} />
             <Route path="menu3" element={<Menu3 />} />
+            <Route path="menu4" element={<Menu4 />} />
           </Route>
         </Routes>
       </div>

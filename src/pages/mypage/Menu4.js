@@ -5,16 +5,15 @@ import { Controller, useForm } from 'react-hook-form';
 import { useSelector } from 'react-redux';
 
 const Menu4 = () => {
-
-    const [list,setList] =useState([]);
-
+    
     //상수
     const {token} = useSelector((state) => state.LoginReducer);
     const scriptUrl = `https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js`;
     const open = useDaumPostcodePopup(scriptUrl);
     
-
+    
     // 상태변수
+    const [list,setList] =useState([]);
     const { control, handleSubmit, setValue ,setFocus} = useForm({
         defaultValues : {
             "postCode": "",
